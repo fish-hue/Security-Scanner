@@ -1,0 +1,7 @@
+{
+    "CREDENTIAL_PATTERNS": ["password", "username", "api_key", "access_token", "secret"],
+    "INSECURE_HTTP_PATTERN": "http://[^\s]+",
+    "SQL_PATTERN": "(select|insert|update|delete|drop|union)\\s+[^\s]+.*\\s*=\\s*.*[\"';]",
+    "UNSANITIZED_INPUT_PATTERN": "(eval|exec|input|os\\.system|subprocess)\\s*\\(",
+    "MISSING_AUTH_PATTERN": "(/admin|/dashboard|/user|/settings)\\s*[^a-zA-Z]"
+}
